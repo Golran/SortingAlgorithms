@@ -358,6 +358,7 @@ MigrationBackup/
 **/.idea/dictionaries
 **/.idea/httpRequests/
 
+
 # Sensitive or high-churn files
 **/.idea/**/dataSources/
 **/.idea/**/dataSources.ids
@@ -371,6 +372,7 @@ MigrationBackup/
 **/.idea/**/*.iml
 **/.idea/**/contentModel.xml
 **/.idea/**/modules.xml
+.idea/
 
 *.suo
 *.user
