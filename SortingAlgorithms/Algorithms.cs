@@ -83,41 +83,5 @@ namespace SortingAlgorithms
 		}
 
 		#endregion
-
-		#region Pow
-
-		public static double Pow(double powerBase, int exponent)
-		{
-			var result = 1.0;
-
-			while (exponent > 0)
-			{
-				if ((exponent & 1) == 0)
-				{
-					powerBase *= powerBase;
-					exponent >>= 1;
-				}
-				else
-				{
-					result *= powerBase;
-					--exponent;
-				}
-			}
-
-			return result;
-		}
-
-		public static double PowRecursion(double powerBase, int exponent)
-		{
-			if (exponent == 0)
-				return 1;
-			if (exponent == 1)
-				return powerBase;
-
-			var p = PowRecursion(powerBase, exponent / 2);
-			return p * p * PowRecursion(powerBase, exponent % 2);
-		}
-
-		#endregion
 	}
 }
